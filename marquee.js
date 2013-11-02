@@ -17,11 +17,12 @@ $(document).ready(function(){
 			//vars
 			var textWidth = $(this).width();
 			var containerWidth = $(this).closest(".marqueeContainer").width();
+			var buffer = 1;
 			
 			//execute
 			if(textWidth > containerWidth){
 				var difference = textWidth - containerWidth;
-				$(this).css("left", -difference - 1);
+				$(this).css("left", -difference - buffer);
 			}
 		},
 		

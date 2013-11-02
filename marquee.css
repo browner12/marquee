@@ -1,21 +1,33 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Title of the document</title>
-<link type="text/css" href="marquee.css" />
-</head>
-<body>
+/**
+ * marquee css
+ *
+ * this allows hover scrolling for overflow text
+ * i wish i could do this only with css, but JS takes care of variable 'left'
+ *
+ * @author Andrew Brown <browner12@gmail.com>
+ * @version 1.0
+ * @copyright Andrew Brown 2013 
+ *
+ */
+ 
+.marquee{
+	overflow: hidden;
+	position: relative;
+	left:0px;
+	transition:left 1s linear 1s;
+	-webkit-transition: left 1s linear 1s;
+	white-space: nowrap;
+}
 
-<!--container-->
-<div class="marqueeContainer">
+.marquee:hover{
+	transition:left 3s linear 3s;
+	-webkit-transition: left 3s linear 3s;
+}
 
-	<!--text-->
-	<section id="text" style="width:100px; border:1px solid black; padding:5px; ">
-		<h5>Text</h5>
-		<div class="marqueeWrapper"><span class="marquee">this is some really long text that will be we overflow hidden.</span></div>
-	</section>
-	
-</div>
+.marqueeContainer{
+	overflow: hidden;
+}
 
-</body>
-</html>
+.marqueeWrapper{
+	overflow: hidden;
+}
