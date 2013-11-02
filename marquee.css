@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title of the document</title>
+<link type="text/css" href="marquee.css" />
+</head>
+<body>
+
+<!--container-->
+<div class="marqueeContainer">
+
+	<!--text-->
+	<section id="text" style="width:100px; border:1px solid black; padding:5px; ">
+		<h5>Text</h5>
+		<div class="marqueeWrapper"><span class="marquee">this is some really long text that will be we overflow hidden.</span></div>
+	</section>
+	
+</div>
+
+</body>
+</html>
