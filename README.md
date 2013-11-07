@@ -7,7 +7,7 @@ feedback appreciated!
 
 demo
 ----
-www.andrewmichaelbrown.com/marquee
+www.andrewmichaelbrown.com/index.php/marquee
 
 files
 -----
